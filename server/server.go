@@ -21,8 +21,6 @@ import (
 	"github.com/yudai/gotty/pkg/homedir"
 	"github.com/yudai/gotty/pkg/randomstring"
 	"github.com/yudai/gotty/webtty"
-
-//	"pkg/staticurl"
 )
 
 // Server provides a webtty HTTP endpoint.
