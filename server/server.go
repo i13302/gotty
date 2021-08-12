@@ -21,6 +21,8 @@ import (
 	"github.com/yudai/gotty/pkg/homedir"
 	"github.com/yudai/gotty/pkg/randomstring"
 	"github.com/yudai/gotty/webtty"
+
+	"github.com/i13302/pkg/staticurl"
 )
 
 // Server provides a webtty HTTP endpoint.
@@ -98,6 +100,8 @@ func (server *Server) Run(ctx context.Context, options ...RunOption) error {
 	path := "/"
 	if server.options.EnableRandomUrl {
 		path = "/" + randomstring.Generate(server.options.RandomUrlLength) + "/"
+	}else if server.options.EnableStaticUrl{
+		path = "/" + staticurl.Generate(server.options.StaticUrlString) + "/"
 	}
 
 	handlers := server.setupHandlers(cctx, cancel, path, counter)
