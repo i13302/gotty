@@ -1,10 +1,10 @@
-package staticurl 
+package staticurl
 
-import (
+//import (
 	//"crypto/rand"
 	//"math/big"
 	//"strconv"
-)
+//)
 
 func Generate(urlstr string) string {
 	//const base = 36
