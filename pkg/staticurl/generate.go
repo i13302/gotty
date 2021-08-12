@@ -1,9 +1,9 @@
 package staticurl 
 
 import (
-	"crypto/rand"
-	"math/big"
-	"strconv"
+	//"crypto/rand"
+	//"math/big"
+	//"strconv"
 )
 
 func Generate(urlstr string) string {

@@ -22,7 +22,7 @@ import (
 	"github.com/yudai/gotty/pkg/randomstring"
 	"github.com/yudai/gotty/webtty"
 
-	"github.com/i13302/pkg/staticurl"
+	"github.com/i13302/gotty/pkg/staticurl"
 )
 
 // Server provides a webtty HTTP endpoint.
